@@ -38,9 +38,13 @@ class Motorbike extends Vehicle {
     this.year = year;
     this.weight = weight;
     this.topSpeed = topSpeed;
+    this.wheels = [new Wheel(), new Wheel()];
     // Check if the wheels array has 2 elements
     // If not, create 2 new Wheel objects
     // Otherwise, use the provided wheels array
+    if (!wheels) {
+      this.wheels = [new Wheel(), new Wheel()];
+    } else
     if (wheels.length !== 2) {
       this.wheels = [new Wheel(), new Wheel()];
     } else {

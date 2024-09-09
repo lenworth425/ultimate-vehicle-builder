@@ -7,10 +7,6 @@ import AbleToTow from '../interfaces/AbleToTow.js';
 
 // TODO: The Truck class should extend the Vehicle class and should implement the AbleToTow interface
 class Truck extends Vehicle implements AbleToTow {
-  static vin: any;
-  static tow(selectedVehicle: any) {
-    throw new Error("Method not implemented.");
-  }
   
   // TODO: Declare properties of the Truck class
   vin: string;
@@ -40,6 +36,7 @@ class Truck extends Vehicle implements AbleToTow {
     towingCapacity: number
   ) {
     super();
+
     this.vin = vin;
     this.color = color;
     this.make = make;
@@ -47,29 +44,32 @@ class Truck extends Vehicle implements AbleToTow {
     this.year = year;
     this.weight = weight;
     this.topSpeed = topSpeed;
+    this.towingCapacity = towingCapacity;
+
     if (wheels.length !== 4) {
       this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
     } else {
       this.wheels = wheels;
     }
-    this.towingCapacity = towingCapacity;
+  
   // TODO: Implement the tow method from the AbleToTow interface
     // TODO: Get the make an model of the vehicle if it exists
     // TODO: Check if the vehicle's weight is less than or equal to the truck's towing capacity
     // TODO: If it is, log that the vehicle is being towed
     // TODO: If it is not, log that the vehicle is too heavy to be towed
-   
-}
-
-  tow = (vehicle: Motorbike | Car): void => {
+  }
+  tow(vehicle: Truck | Motorbike | Car): void {
     const vehicleMake = vehicle.make;
     const vehicleModel = vehicle.model;
+    
     if (vehicle.weight <= this.towingCapacity) {
       console.log(`The ${vehicleMake} ${vehicleModel} is being towed.`);
     } else {
       console.log(`The ${vehicleMake} ${vehicleModel} is too heavy to be towed.`);
-    }
+    };
   }
+
+
 
 
   // TODO: Override the printDetails method from the Vehicle class
