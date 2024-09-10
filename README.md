@@ -21,17 +21,21 @@ The link below will guide you how to use the Ultimate Vehicle Builder
 
 ### Video Walkthrough
 
-[Video] Google drive video alternative
+[Video](./assets/UltimateVehicleBuilder.mp4) 
+
+[Google drive video alternative](https://drive.google.com/file/d/1N3pH1GrW_v87WoVmZ4xofoRnXPZAH94u/view?usp=sharing)
 
 ### Screenshot
 The following images demonstrates the application's appearance and functionality:
 
-Questions
-[Screenshot1]
-
 Result
-[Screenshot2]
 
-[Screenshot2]
+![Screenshot1](./assets/Start.png)
 
-© 2024 lenworth425 Confidential and Proprietary. All Rights Reserved.
+![Screenshot2](./assets/Flow1.png)
+
+![Screenshot3](./assets/Flow2.png)
+
+![Screenshot3](./assets/End.png)
+
+© 2024 lenworth425 Confidential and Proprietary. All Rights Reserved.6
